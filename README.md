@@ -1,75 +1,17 @@
-# Nuxt Minimal Starter
+# 이스트소프트 프론트엔드 부트캠프 도전과제 (2024.11.21)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 1. 프로젝트 시작하기
 
-## Setup
+1. **프로젝트 파일 다운로드**  
+   해당 프로젝트를 ZIP 파일을 다운로드 받은 후, 프로젝트 폴더에서 아래 명령어를 실행하여 개발 서버를 시작해 주세요.
 
-Make sure to install dependencies:
+   ```bash
+   npm run dev
 
-```bash
-# npm
-npm install
+## 2. 링크
 
-# pnpm
-pnpm install
+프로젝트 파일 실행 후, 각 도전과제의 UI를 아래 링크에서 확인할 수 있습니다:
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- 도전과제 1 UI 확인 : http://localhost:3000/assignment1
+- 도전과제 2 UI 확인 : http://localhost:3000/assignment2
+- 도전과제 3 UI 확인 : http://localhost:3000/assignment3
