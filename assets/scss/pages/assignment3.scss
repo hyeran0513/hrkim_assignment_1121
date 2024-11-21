@@ -1,0 +1,127 @@
+.page {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  // 사이드바
+  .sidebar {
+    width: 76px;
+    background: #11101d;
+    color: #fff;
+
+    // 로고 영역
+    .logo-details {
+      display: flex;
+      justify-content: center;
+      height: 90px;
+
+      & > i {
+        margin-top: 16px;
+        font-size: 32px;
+      }
+    }
+
+    // 네비게이션 링크 영역
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 90px);
+
+      // 각 메뉴 항목
+      & > li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        transition: all 0.2s ease;
+
+        // 메뉴 항목 hover 시 이벤트
+        &:hover {
+          background: #1d1b31;
+        }
+
+        // 메뉴 링크 영역
+        & > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          // 활성화된 메뉴 링크 영역
+          &.is-active {
+            background: #1d1b31;
+          }
+
+          & > i {
+            font-size: 24px;
+          }
+        }
+
+        // 서브 메뉴
+        .sub-menu {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translateY(-50%);
+          background: #1d1b31;
+          border-radius: 0 4px 4px 0;
+          padding: 8px 20px;
+          width: auto;
+          white-space: nowrap;
+          transition: max-height 0.3s ease;
+
+          // 서브 메뉴가 여러 개일 경우, 메뉴 위치 초기화
+          &.multi {
+            top: 0;
+            transform: translateY(0);
+          }
+
+          // 각 서브 메뉴 항목
+          & > li {
+            // 서브 메뉴 링크 영역
+            & > a {
+              height: 34px;
+              line-height: 32px;
+              color: #92919c;
+              font-size: 14px;
+              transition: all ease 0.2s;
+
+              &:hover {
+                color: #fff;
+              }
+
+              &.link_name {
+                color: #fff;
+                font-size: 18px;
+
+                &:hover {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 홈 영역
+  .home-section {
+    flex: 1;
+    padding: 18px 24px;
+    background: #e4e9f7;
+
+    // 홈 콘텐츠
+    .home-content {
+      & > i {
+        margin-right: 18px;
+        font-size: 24px;
+      }
+
+      .text {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}

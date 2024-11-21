@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// 슬라이드 상하
+.slide-enter-active,
+.slide-leave-active {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  max-height: 300px;
+  overflow: hidden;
+}
