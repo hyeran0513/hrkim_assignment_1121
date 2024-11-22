@@ -68,13 +68,13 @@ const handleDrop = (dropIndex) => {
 
 // 현재 인덱스가 hover 상태인지 확인
 const isHovered = (index) => {
-  hoveredIndex.value === index;
+  return hoveredIndex.value === index;
 }
 
 // 현재 드래그 중인 인덱스가 hold 상태인지 확인
 const isHeld = (index) => {
-  draggedIndex.value === index;
-}
+  return draggedIndex.value === index;
+};
 </script>
 
 <style lang="scss" scoped>
