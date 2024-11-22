@@ -1,4 +1,4 @@
-# 이스트소프트 프론트엔드 부트캠프 도전과제 (2024.11.21)
+# 이스트소프트 프론트엔드 부트캠프 도전과제
 
 ## 1. 프로젝트 시작하기
 
@@ -12,6 +12,13 @@
 
 프로젝트 파일 실행 후, 각 도전과제의 UI를 아래 링크에서 확인할 수 있습니다:
 
-- 도전과제 1 UI 확인 : http://localhost:3000/assignment1
-- 도전과제 2 UI 확인 : http://localhost:3000/assignment2
-- 도전과제 3 UI 확인 : http://localhost:3000/assignment3
+**2024.11.21**
+- 도전과제 1 UI 확인 : http://localhost:3000/20241121/assignment1
+- 도전과제 2 UI 확인 : http://localhost:3000/20241121/assignment2
+- 도전과제 3 UI 확인 : http://localhost:3000/20241121/assignment3
+
+**2024.11.22**
+- 도전과제 1 UI 확인 : http://localhost:3000/20241122/assignment1
+- 도전과제 2 UI 확인 : http://localhost:3000/20241122/assignment2
+- 도전과제 3 UI 확인 : http://localhost:3000/20241122/assignment3
+- 도전과제 4 UI 확인 : http://localhost:3000/20241122/assignment4
