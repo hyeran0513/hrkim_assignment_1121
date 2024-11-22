@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="wrapper">
+    <CommonHomeButton />
+
     <slot />
   </div>
 </template>

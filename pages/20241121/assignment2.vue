@@ -16,9 +16,9 @@
 </template>
 
 <script setup>
-import artist01 from "@/assets/images/assignment2/artist-01.jpg";
-import artist02 from "@/assets/images/assignment2/artist-02.jpg";
-import artist03 from "@/assets/images/assignment2/artist-03.jpg";
+import artist01 from "@/assets/images/20241121/assignment2/artist-01.jpg";
+import artist02 from "@/assets/images/20241121/assignment2/artist-02.jpg";
+import artist03 from "@/assets/images/20241121/assignment2/artist-03.jpg";
 
 const data = ref([
   {
@@ -42,5 +42,5 @@ const data = ref([
 </script>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/pages/assignment2.scss" as assignment2;
+@use "@/assets/scss/pages/20241121/assignment2.scss" as assignment2;
 </style>

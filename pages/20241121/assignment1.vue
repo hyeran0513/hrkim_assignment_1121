@@ -66,5 +66,5 @@ const selectedCount = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/pages/assignment1.scss" as assignment1;
+@use "@/assets/scss/pages/20241121/assignment1.scss" as assignment1;
 </style>

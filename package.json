@@ -12,12 +12,9 @@
   "dependencies": {
     "@vueuse/core": "^11.2.0",
     "nuxt": "^3.14.1592",
-    "saas": "^1.0.0",
+    "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "vue": "latest",
     "vue-router": "latest"
-  },
-  "devDependencies": {
-    "sass-embedded": "^1.81.0"
   }
 }

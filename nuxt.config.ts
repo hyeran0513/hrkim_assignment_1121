@@ -16,5 +16,5 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["@/assets/scss/base/reset.scss", "@/assets/scss/base/animation.scss"]
+  css: ["@/assets/scss/base/reset.scss", "@/assets/scss/base/animation.scss", "@/assets/scss/base/layout.scss"]
 });

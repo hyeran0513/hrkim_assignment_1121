@@ -1,0 +1,107 @@
+
+$white: #fff;
+$gray-light: #e2e2e2;
+$active-color: #eb608c;
+$box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+.page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: $gray-light;
+}
+
+.toggle {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  transform: rotate(-45deg);
+  border-bottom-left-radius: 100px; // 왼쪽 하단에 둥근 모서리 설정
+  box-shadow: $box-shadow;
+  background-color: $white;
+  cursor: pointer;
+  transition: background-color ease .6s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: $white;
+    transition: background-color ease .6s;
+    z-index: -1;
+  }
+
+  &::before {
+    top: -50%; // 위로 50% 이동
+    left: 0;
+  }
+
+  &::after {
+    top: 0;
+    right: -50%; // 오른쪽으로 50% 이동
+  }
+
+  // 활성화된 경우
+  &.toggle--active {
+    background-color: $active-color;
+
+    &::before,
+    &::after {
+      background-color: $active-color;
+    }
+
+    .circle {
+      animation: slideIn 0.6s forwards;
+    }
+  }
+
+  // 비활성화된 경우
+  &.toggle--inactive {
+    .circle {
+      animation: slideOut 0.6s forwards;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    transition: left 0.6s, top 0.6s;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    left: 8px;
+    top: -22px;
+  }
+  50% {
+    left: 16px;
+    top: 0;
+  }
+  100% {
+    left: 38px;
+    top: 7px;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    left: 38px;
+    top: 7px;
+  }
+  50% {
+    left: 16px;
+    top: 0;
+  }
+  100% {
+    left: 8px;
+    top: -22px;
+  }
+}

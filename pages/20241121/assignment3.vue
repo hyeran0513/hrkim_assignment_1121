@@ -116,5 +116,5 @@ onClickOutside(sidebarRef, event => {
 
 
 <style lang="scss" scoped>
-@use "@/assets/scss/pages/assignment3.scss" as assignment3;
+@use "@/assets/scss/pages/20241121/assignment3.scss" as assignment3;
 </style>
